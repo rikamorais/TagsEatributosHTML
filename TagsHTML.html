@@ -25,24 +25,30 @@
      */ -->
     
 <!-- 
-  ┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-  │    DIV CONTAINER                                                                                               │
-  └────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  ┌───────────────────────────────────────────────────────────────┐
+  │    DIV CONTAINER                                              |                                                 │
+  └───────────────────────────────────────────────────────────────┘
  -->
+
 <div class="container">
          
          <!-- /*=============================================
          =            header            =
          =============================================*/ -->
         <header>
-            <h1>Tags HTML</h1>
+             <!-- HTML !-->
+            <div class="divTitulo">
+                <h1 class="title">
+                    Tags &lt;html&gt;
+                </h1>
+            </div>
 
         <!-- /*----------  nav  ----------*/ -->
             <nav>
             
             </nav>
-        </header>
         <!-- /*----------  END OF nav  ----------*/ -->
+        </header>
         <!-- /*----------  END OF header  ----------*/ -->  
         
     <!-- 
@@ -50,26 +56,39 @@
       │                         MAIN                                           │
       └────────────────────────────────────────────────────────────────────────┘
      -->
-        <main>
-            <!-- /*----------  meta START  ----------*/ -->        
-            <section>
-                <h2>
-                    meta
-                </h2>
+        <main>      
+            <section class="sectionTags">
+            
+                <!-- /*----------  meta START  ----------*/ -->  
+                <!-- <h2>
+                    &lt;meta&gt;
+                </h2> -->
                 <p>
-                    <code>meta</code> é uma tag para descrever metadados dentro do HTML.
+                    <code class="codeTag">&lt;meta /&gt;</code> é uma tag para descrever metadados dentro do HTML.
                 </p>
-                <p>
-                    Exemplos:
+                <p class="marginExemplo">
+                    &#10028; Exemplos &#10028;
                 </p>
+
+                <!-- Exemplos de meta tag -->
     
-                <p>meta charset="<strong>UTF-8</strong>"></p>
-                <p>meta name="<strong>description</strong>" content="Free Web tutorials"></p>
-                <p>meta name="<strong>keywords</strong>" content="HTML, CSS, JavaScript"></p>
-                <p>meta name="<strong>author</strong>" content="John Doe"></p>
-                <p>meta name="<strong>viewport</strong>" content="width=device-width, initial-scale=1.0"></p>
+                <p>
+                    &lt;meta charset="<strong>UTF-8/&gt;</strong>"
+                </p>
+                <p>
+                    &lt;meta name="<strong>description</strong>" content="Free Web tutorials"&gt;
+                </p>
+                <p>
+                    &lt;meta name="<strong>keywords</strong>" content="HTML, CSS, JavaScript"&gt;
+                </p>
+                <p>
+                    &lt;meta name="<strong>author</strong>" content="John Doe"&gt;
+                </p>
+                <p>
+                    &lt;meta name="<strong>viewport</strong>" content="width=device-width, initial-scale=1.0"&gt;
+                </p>
             </section>
-            <!-- /*----------  meta END  ----------*/ -->
+            <!-- /*---------- END OF meta tag ----------*/ -->
             <hr>
             
         <!-- 
@@ -77,63 +96,130 @@
         │       Tags para marcação de texto                                      │
         └────────────────────────────────────────────────────────────────────────┘
         -->      
-            <section>
+            <section class="marcacaoTexto">
                 <h2>
                     Tags para marcação de texto
                 </h2>
-                <p><small>small</small></p>
+
+                
+                <!-- /*----------  SMALL  ----------*/ -->
+                <code class="codeTag">&lt;small&gt;</code> 
+                <code class="codeTag">&lt;/small&gt;</code>
+                <p>
+                    Texto normal <small>Texto small</small>
+                </p>
+                <hr>
+                
+                <!-- /*----------  DEL  ----------*/ -->
+                <code class="codeTag">&lt;del&gt;</code> 
+                <code class="codeTag">&lt;/del&gt;</code>
                 <p><del>del</del></p>
-                <p>ins - utilizado após o del, mostrando a correção. <del>blue </del><ins>red</ins></p>
+                <hr>
+                
+                <!-- /*----------  INS  ----------*/ -->
+                <code class="codeTag">&lt;ins&gt;</code> 
+                <code class="codeTag">&lt;/ins&gt;</code>
+                <p>
+                    ins - utilizado após o del, mostrando a correção sublinhada. <del>blue </del><ins>red</ins>
+                </p>
+                <hr>
+
+                <!-- /*----------  SUP  ----------*/ -->
+                <code class="codeTag">&lt;sup&gt;</code> 
+                <code class="codeTag">&lt;/sup&gt;</code>
                 <p>10<sup>sup</sup></p>
+                <hr>
+
+                <!-- /*----------  SUB  ----------*/ -->
+                <code class="codeTag">&lt;sub&gt;</code> 
+                <code class="codeTag">&lt;/sub&gt;</code>
                 <p>10<sub>sub</sub></p>
+                <hr>
+
+                <!-- /*----------  MARK  ----------*/ -->
+                <code class="codeTag">&lt;mark&gt;</code> 
+                <code class="codeTag">&lt;/mark&gt;
+                </code>
                 <p>text<mark>mark</mark></p>
+                <hr>
+
+                <!-- /*----------  STRONG  ----------*/ -->
+                <code class="codeTag">&lt;strong&gt;</code> 
+                <code class="codeTag">&lt;/strong&gt;</code>
                 <p><strong>strong</strong> - para negrito.</p>
+                <hr>
+
+                <!-- /*----------  EM  ----------*/ -->
+                <code class="codeTag">&lt;em&gt;</code> 
+                <code class="codeTag">&lt;/em&gt;</code>
                 <p><em>em</em> - para dar ênfase.</p>
-                            <!-- /*----------  abbr START  ----------*/ -->
-            
-                <h3>abbr</h3>
+                <hr>
+
+                <!-- /*----------  abbr START  ----------*/ -->
+                <code class="codeTag">&lt;abbr&gt;</code>
+                <code class="codeTag">&lt;/abbr&gt;</code>
                 <p>
                      Para colocar o significado de uma sigla.
                 </p>
                 <p>
-                    Estamos aprendendo <abbr title="Hyper Text Markup Language">HTML</abbr>. - <strong>abbr title="Hyper Text Markup Language"</strong>
+                    Estamos aprendendo <abbr title="Hyper Text Markup Language">HTML</abbr>. - <strong>&lt;abbr title="Hyper Text Markup Language"</strong>
                 </p>
-            
-            <!-- /*----------  END OF abbr  ----------*/ -->
+                <hr>
             
             <!-- /*----------  adress START  ----------*/ -->
-                <h3>
-                    adress
-                </h3>
+                <code class="codeTag">&lt;adress&gt;</code>
+                <code class="codeTag">&lt;/adress&gt;</code>
                 <p>
                     Para endereços físicos e virtuais (e-mail, url), telefone, endereços de mídia social.
                 </p>
                 <address>Rua do Exemplo, 123. Centro - São Paulo/SP</address>
             </section>
-                <!-- /*----------  END OF adress  ----------*/ -->
-                <!-- /*----------  END OF Tags para marcação de texto  ----------*/ -->  
+
+            <!-- /*----------  END OF Tags para marcação de texto  ----------*/ -->  
             <hr>
             
         <!-- 
         ┌────────────────────────────────────────────────────────────────────────┐
-        │    Tags para estruturar a página                                       │
+        │       Tags para estruturar a página                                    │
         └────────────────────────────────────────────────────────────────────────┘
         -->        
             <section>           
                 <h2>
                     Tags para estruturar a página html
                 </h2>
+
+                
+                <!-- /*----------  header  ----------*/ -->               
+                <code class="codeTag">&lt;header&gt;</code> 
+                <code class="codeTag">&lt;/header&gt;</code>
                 <p>
-                    <strong>header</strong> para o cabeçalho da página, de uma <code>section</code>, de um <code>aside</code> e de um <code>article</code>.
+                    Para o cabeçalho da página, de uma section, de um aside e de um article.
                 </p>
+                <hr>
+
+                <!-- /*----------  nav  ----------*/ -->  
+
+                <code class="codeTag">&lt;nav&gt;</code> 
+                <code class="codeTag">&lt;/nav&gt;</code>
+
                 <p>
-                    <strong>nav</strong> para o menu de navegação. Pode ficar dentro da tag <code>header</code>.
+                    Para o menu de navegação. Pode ficar dentro da tag header.
                 </p>
+                <hr>
+
+                <!-- /*----------  main  ----------*/ -->  
+                <code class="codeTag">&lt;main&gt;</code> 
+                <code class="codeTag">&lt;/main&gt;</code>
                 <p>
-                    <strong>main</strong>, que fica entre o header e o footer. Nele fica o conteúdo principal do documento.
+                    Fica entre o header e o footer. Nele fica o conteúdo principal do documento.
                 </p>
+                <hr>
+
+                <!-- /*----------  footer  ----------*/ -->  
+                <code class="codeTag">&lt;footer&gt;</code> 
+                <code class="codeTag">&lt;/footer&gt;</code>
                 <p>
-                    <strong>footer</strong> para o rodapé da página.
+                    footer para o rodapé da página.
                 </p>
             </section>
             <!-- /*----------  Tags para estruturar a página END  ----------*/ --> 
@@ -141,7 +227,7 @@
             <hr>
     <!-- 
       ┌────────────────────────────────────────────────────────────────────────┐
-      │   CITAÇÕES                                                             │
+      │      CITAÇÕES                                                          │
       └────────────────────────────────────────────────────────────────────────┘
      -->
             <section>
@@ -150,22 +236,21 @@
                 </h2>
                            
                 <!-- /*----------  cite START  ----------*/ -->            
-                <h3>
-                    cite
-                </h3>
+                <code class="codeTag">&lt;cite&gt;</code> 
+                <code class="codeTag">&lt;/cite&gt;</code>
                 <p>
                     Para citar nome de uma obra, que fica em itálico.
                 </p>
-                
                 <p>
                     Filme <cite>Matrix</cite>
                 </p>
                 <!-- /*----------  END OF cite  ----------*/ -->
-                
+                <hr>
                 
                 <!-- /*----------  q START  ----------*/ -->        
                 <h3>
-                    q
+                    <code class="codeTag">&lt;q&gt;</code> 
+                    <code class="codeTag">&lt;/q&gt;</code>
                 </h3>
                 <p>
                     Coloca aspas para citações diretas.
@@ -176,17 +261,18 @@
                                 </q>
                 </p>
                 <!-- /*----------  END OF q  ----------*/ -->            
-                
+                <hr>
                 
                 <!-- /*----------  blockquote  ----------*/ -->             
                 <h3>
-                    blockquote
+                    <code class="codeTag">&lt;blockquote&gt;</code> 
+                    <code class="codeTag">&lt;/blockquote&gt;</code>
                 </h3>
                 <p>
                     Uma seção que é citada de outra fonte:
                 </p>
                 <p>
-                    blockquote cite="http://www.worldwildlife.org/who/index.html"
+                    &lt;blockquote cite="http://www.worldwildlife.org/who/index.html"&gt;
                 </p>
                 <blockquote cite="http://www.worldwildlife.org/who/index.html">
                     For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
@@ -195,20 +281,7 @@
             </section>
             <hr>
             
-            <!-- /*=============================================
-            =            Direções do Texto            =
-            =============================================*/ -->
-            
-            <section>
-                <h2>
-                    Direções do texto
-                </h2>
-                <p>
-                    <bdo dir="ltr">Texto left to rigth</bdo> - <strong>bdo dir="ltr"</strong>
-                </p>
-                <p><bdo dir="rtl">Texto left to rigth</bdo> - <strong>bdo dir="rtl"</strong></p>
-                <hr>
-            </section>
+
             <!-- /*----------  END OF Direções do Texto  ----------*/ -->
             
     <!-- 
@@ -220,64 +293,107 @@
                 <h2>
                     Imagens
                 </h2>
+
+                <!-- código exemplo de img -->
+                <code class="codeTag">&lt;img /&gt;</code> 
                 
-                <figure>
-                    <img src="imagem.jpg" alt="imagem de exemplo" sizes="" srcset="" title="imagem de exemplo">
-                    <figcaption>Fig.1 - Legenda da imagem</figcaption>
-                </figure>
+                    <p class="tab1">&lt;figure&gt;</p>
+                    <p class="tab2">&lt;img src="imagem.jpg" alt="imagem de exemplo" sizes="" title="imagem de exemplo" /&gt;</p>
+                    <p class="tab2">&lt;figcaption&gt;Fig.1 - Legenda da imagem&lt;/figcaption&gt;</p class="tab2">
+                    <p class="tab1">&lt;/figure&gt;</p>
+                
                 <p>
-                    Utilizar a tag <code>figure</code> antes da tag <code>img</code> e <code>figcaption</code> para colocar uma legenda.
+                    Tag que deve ser precedida pela tag <em>figure</em>, é utilizada para inserir imagens no html.
                 </p>
                 <p>
-                    O atributo "sizes" da tag <code>img</code> no HTML é utilizado em conjunto com o atributo "srcset" para especificar o tamanho da imagem que será exibida em diferentes tamanhos de tela.
+                    Após a tag <em>img</em>, é possível utilizar a tag <em>figcaption</em> para colocar uma legenda.
+                </p>
+
+                
+                <!-- /*----------  Atributos  ----------*/ -->
+                
+                <p class="atributos">
+                    Atributos:
                 </p>
                 <p>
-                    Utilizar o atributo <strong><code>title</code></strong> para a imagem listar em mecanismos de busca.
+                    <code class="codeAtributo">src</code> - Atributo para colocar o caminho da imagem.
                 </p>
                 <p>
-                    Também pode-se utilizar a tag <code>object</code>
+                    <code class="codeAtributo">alt</code> - Texto alternativo para caso a imagem não carregue ou tenha que ser descrita por um browser, o atributo <em>alt</em> descreve a imagem.
                 </p>
                 <p>
-                    <object data="imagem.jpg" width="300" height="200"></object>
-                    <code>object data="imagem.jpg" width="300" height="200"</code>
+                    <code class="codeAtributo">longdesc</code> - link para uma descrição mais detalhada da imagem. Os valores possíveis são um <u>URL</u> ou um elemento <u>id</u>.
+                </p>
+                <p>
+                    <code class="codeAtributo">title</code>
+                    Utilizar o atributo title para a imagem listar em mecanismos de busca.
+                </p>
+                <p>
+                    Também pode-se utilizar a tag object.
+                </p>
+                <p class="tab1">
+                    &lt;object data="imagem.jpg" width="300" height="200"&gt;
                 </p>
                 
             </section>
             <!-- /*----------  END OF IMAGENS  ----------*/ -->
             <hr>
+
+    <!-- 
+    ┌────────────────────────────────────────────────────────────────────────┐
+    │    FIGURE                                                              │
+    └────────────────────────────────────────────────────────────────────────┘
+    -->
+        <section>
+            <h3>
+                <code class="codeTag">&lt;figure&gt;</code> <code class="codeTag">&lt;/figure&gt;</code>
+            </h3>
+            <p>
+                A tag figure normalmente é utilizada para referenciar uma imagem, ilustração, diagrama, trecho de código, etc.,
+            </p>
+            <p>Pode ser acompanha da tag <em>figcaption</em> para adicionar uma legenda.</p>
+
+            <!-- código exemplo de figure -->
+            <p class="tab1">&lt;figure&gt;</p>
+            <p class="tab2">&lt;img src="imagem.jpg" alt="imagem de exemplo" sizes="" title="imagem de exemplo" /&gt;</p>
+            <p class="tab2">&lt;figcaption&gt;Fig.1 - Legenda da imagem&lt;/figcaption&gt;</p class="tab2">
+            <p class="tab1">&lt;/figure&gt;</p>
+        </section>
             
     <!-- 
-      ┌────────────────────────────────────────────────────────────────────────┐
-      │    LINKS                                                               │
-      └────────────────────────────────────────────────────────────────────────┘
-     -->
+    ┌────────────────────────────────────────────────────────────────────────┐
+    │    LINKS                                                               │
+    └────────────────────────────────────────────────────────────────────────┘
+    -->
             <section>
                 <h2>Links</h2>
                 <p>
-                    <strong><code>../</code></strong> para voltar uma pasta
+                    <code class="codeTag">../</code> para voltar uma pasta
                 </p>
                 <p>
-                    <strong><code>../../</code></strong> para voltar duas pastas
+                    <code class="codeTag">../../</code> para voltar duas pastas
                 </p>
+                <hr>
+            
+                <code class="codeTag">&lt;a&gt;</code >  <code class="codeTag">&lt;/a&gt;</code >
+                
                 <h3>link absoluto ou externo</h3> 
+                
                 <p>
-                    => a href="http://exemplo.br.jpg" - página externa
+                    => &lt;a href="http://exemplo.br.jpg"&gt; exemplo - página externa &lt;/a&gt;
                 </p>
                 <h3>link relativo ou interno</h3>
                 <p>
-                    => a href="imagem.jpg" - dentro do próprio projeto
+                    => &lt;a href="imagem.jpg"&gt; imagem dentro do próprio projeto &lt;/a&gt;
                 </p>
                 <h3>link vertical</h3> 
+                <p>&lt;a name="capitulo1"&gt; Capítulo 1&lt;/a&gt;
+                    
+                </p>
                 <p>
-                    => a href="#capitulo1"
+                    &lt;a href="#capitulo1"&gt; Capítulo 1 &lt;/a&gt;
                 </p>
-                <p><code>a name="capitulo1></code>Capítulo 1 /a
-                    <!-- <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, 
-                        saepe ullam beatae iure iste nostrum quasi possimus voluptates, 
-                        magni blanditiis earum ut alias aliquid eligendi quia pariatur impedit deserunt. Tenetur.
-                    </p> -->
-                </p>
+                
             </section>
             <hr>
             
@@ -336,10 +452,10 @@
             <!-- /*----------  TAGS PARA TABELAS  ----------*/ -->
             
                 <p>
-                    <strong><code>caption</code></strong> para dar um título para a tabela
+                    <code class="codeTag">caption</code> para dar um título para a tabela
                 </p>
                 <p>
-                    <strong><code>thead</code></strong> para o cabeçalho da tabela.
+                    <code class="codeTag">thead</code> para o cabeçalho da tabela.
                 </p>
                 <p>
                     <strong>tbody</strong> para o corpo da tabela, onde constam as informações.
@@ -364,7 +480,7 @@
                     Ainda há os atributos <strong>rowspan</strong> e <strong>colspan</strong> para mesclar células.
                 </p>
                 <p>
-                    <code><strong>headers</strong></code> atributo especifica uma ou mais células de cabeçalho às quais uma célula de tabela está relacionada.
+                    <code class="codeTag"><strong>headers</strong></code> atributo especifica uma ou mais células de cabeçalho às quais uma célula de tabela está relacionada.
                 </p>
                     
                 <p class="tag1 tab1">table>
@@ -480,28 +596,28 @@
             
                     <ul>
                         <li>
-                            Utilizar o atributo <code>tabindex</code> para colocar uma ordem de preenchimento dos inputs caso o usuário utilize a tecla tab.
+                            Utilizar o atributo <code class="codeAtributo">tabindex</code> para colocar uma ordem de preenchimento dos inputs caso o usuário utilize a tecla tab.
                         </li>
                         <li>
-                            Utilizar a tag <code>fieldset</code> e a <code>legend</code> para agrupar elementos relacionados em um formulário.
+                            Utilizar a tag <code class="codeTag">fieldset</code> e a <code class="codeTag">legend</code> para agrupar elementos relacionados em um formulário.
                         </li>
                         <li>
-                            Para elementos relacionados no formulário, utiliza-se a tag <code>legend</code>
+                            Para elementos relacionados no formulário, utiliza-se a tag <code class="codeTag">legend</code>
                         </li>
                         <li>
-                            Utilizar a tag <code>label</code> para identificar o campo.
+                            Utilizar a tag <code class="codeTag">label</code> para identificar o campo.
                         </li>
                         <li>
-                            Pode ser usado o atributo <code>autocomplete="on" ou "off"</code> para <code>input</code> ou <code>form</code>.
+                            Pode ser usado o atributo <code class="codeTag">autocomplete="on" ou "off"</code> para <code class="codeTag">input</code> ou <code class="codeTag">form</code>.
                         </li>
                         <li>
-                            Utilizar o autofocus em: <code>button</code>, <code>input</code>, <code>select</code> e <code>textarea</code>.
+                            Utilizar o autofocus em: <code class="codeTag">button</code>, <code class="codeTag">input</code>, <code class="codeTag">select</code> e <code class="codeTag">textarea</code>.
                             <p>
-                                Exemplo: <code>button type="button" autofocus>Click Me! /button></code>
+                                Exemplo: <code class="codeTag">button type="button" autofocus>Click Me! /button></code>
                             </p>
                         </li>
                         <li>
-                            Utilizar o atributo <code>enctype="multipart/form-data"</code> para que os dados sejam enviados codificados. Apenas pelo method="post".
+                            Utilizar o atributo <code class="codeTag">enctype="multipart/form-data"</code> para que os dados sejam enviados codificados. Apenas pelo method="post".
                         </li>
                         <li>
                             <h3>
@@ -511,7 +627,7 @@
                                 Substitui o action="get" ou "post". Utiliza-se no button type submit
                             </p>
                             <p>
-                                <code>button type="submit" formaction="/action_page2.php">Submit to another page  /button></code>
+                                <code class="codeTag">button type="submit" formaction="/action_page2.php">Submit to another page  /button></code>
                             </p>
                         </li>
                     </ul>
@@ -533,7 +649,7 @@
                             <input type="text" name="nome" id="inputNome" placeholder="input type='text' size='30'" size="30" tabindex="1"> 
                         </p>
                         <p>
-                            Ulitizar o atributo <code>maxlength</code> para especifiar o número máximo de caracteres.
+                            Ulitizar o atributo <code class="codeTag">maxlength</code> para especifiar o número máximo de caracteres.
                         </p>
                     </fieldset>
 
@@ -550,7 +666,7 @@
                             <input type="email" name="email" id="inputEmail" size="40" placeholder="input type='email'" tabindex="3">
                         </p>
                         <p>
-                            Ulitizar o atributo <code>maxlength</code> para especifiar o número máximo de caracteres.
+                            Ulitizar o atributo <code class="codeTag">maxlength</code> para especifiar o número máximo de caracteres.
                         </p>
                     </fieldset>
 
@@ -567,7 +683,7 @@
                             <input type="password" id="inputSenha" name="senha" size="20" placeholder="input senha" tabindex="2">
                         </p>
                         <p>
-                            Ulitizar o atributo <code>maxlength</code> para especifiar o número máximo de caracteres.
+                            Ulitizar o atributo <code class="codeTag">maxlength</code> para especifiar o número máximo de caracteres.
                         </p>
                     </fieldset>
 
@@ -580,10 +696,10 @@
                             </h3>
                         </legend>
                         <p>
-                            O atributo <code>name</code> deve ser o mesmo para todos os radios afins.
+                            O atributo <code class="codeTag">name</code> deve ser o mesmo para todos os radios afins.
                         </p>
                         <p>
-                            Para que uma opção já esteja previamente selecionada, deve-se utilizar o atributo <code>checked</code>
+                            Para que uma opção já esteja previamente selecionada, deve-se utilizar o atributo <code class="codeTag">checked</code>
                         </p>
                         <p>
                             <label for="inputRadio"><strong>input type radio</strong></label>
@@ -677,14 +793,14 @@
                         <label for="myfile">Select a file:</label>
                         <input type="file" id="myfile" name="myfile">
                         <p>
-                            Utilizar o atributo <code>multiple</code> para que o usuário possa escolher mais de um arquivo.
+                            Utilizar o atributo <code class="codeTag">multiple</code> para que o usuário possa escolher mais de um arquivo.
                         </p>
                         <p>
-                            O atributo <code>accept</code> seleciona os tipos de arquivos que podem ser selecionados.
+                            O atributo <code class="codeTag">accept</code> seleciona os tipos de arquivos que podem ser selecionados.
                         </p>
                         <label for="avatar">Choose a profile picture:</label>
                         <p>
-                            <code>&lt;input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"></code>
+                            <code class="codeTag">&lt;input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"></code>
                         </p>
                     </fieldset>
 
@@ -714,7 +830,7 @@
                         </legend>
                         <p>
                             An example demonstrating the use of the
-                            <code>&lt;input type="color"&gt;</code> control.
+                            <code class="codeTag">&lt;input type="color"&gt;</code> control.
                           </p>
                           <p>
                             input type="color" value="#ff0000" id="colorWell" />
@@ -726,8 +842,8 @@
                           <p id="colorChange">
                             Watch the paragraph colors change when you adjust the color picker. As you
                             make changes in the color picker, the first paragraph's color changes, as a
-                            preview (this uses the <code>input</code> event). When you close the color
-                            picker, the <code>change</code> event fires, and we detect that to change
+                            preview (this uses the <code class="codeTag">input</code> event). When you close the color
+                            picker, the <code class="codeTag">change</code> event fires, and we detect that to change
                             every paragraph to the selected color.
                           </p>
                     </fieldset>
@@ -775,16 +891,16 @@
                         </p>
                         <input type="number" id="quantity" name="quantity" min="0" max="50" step="5" placeholder="" value="5">
                         <p>
-                            O atributo <code>step</code> define os intervalos de número.
+                            O atributo <code class="codeTag">step</code> define os intervalos de número.
                         </p>
                         <p>
-                            O atributo <code>value</code> define o valor inicial do campo.
+                            O atributo <code class="codeTag">value</code> define o valor inicial do campo.
                         </p>
                         <p>
-                            É possível utilizar o <code>placeholder</code>
+                            É possível utilizar o <code class="codeTag">placeholder</code>
                         </p>
                         <p>
-                            O atributo <code>readonly</code> determina que o campo não é editável, é apenas para ler.
+                            O atributo <code class="codeTag">readonly</code> determina que o campo não é editável, é apenas para ler.
                         </p>
                     </fieldset>
                     <!-- /*----------  END OF INPUT NUMBER  ----------*/ -->
@@ -798,7 +914,7 @@
                             </h3>
                         </legend>
                         <p>
-                            Para alterar o tamanho da área do <code>textarea</code>, deve-se utilizar os atributos <code>col</code>, de colunas, e <code>rows</code> para linhas.
+                            Para alterar o tamanho da área do <code class="codeTag">textarea</code>, deve-se utilizar os atributos <code class="codeTag">col</code>, de colunas, e <code class="codeTag">rows</code> para linhas.
                         </p>
                         <label for="areaTexto"></label>
                         <textarea name="areaTexto" id="areaTexto" cols="30" rows="10" style="resize: none;">Digite seu texto</textarea>
@@ -809,7 +925,7 @@
                             }
                         </p>
                         <p>
-                            Ulitizar o atributo <code>maxlength</code> para especifiar o número máximo de caracteres.
+                            Ulitizar o atributo <code class="codeTag">maxlength</code> para especifiar o número máximo de caracteres.
                         </p>
                     </fieldset>
                     <!-- /*----------  END OF text area  ----------*/ -->
@@ -825,13 +941,13 @@
                                 </h3>
                             </legend>
                             <p>
-                                Utiliza-se a tag <code>select</code> e em seguida a tag <code>option</code>
+                                Utiliza-se a tag <code class="codeTag">select</code> e em seguida a tag <code class="codeTag">option</code>
                             </p>
                             <p>
-                                Para que uma opção já esteja previamente selecionada, deve-se utilizar o atributo <code>checked</code>
+                                Para que uma opção já esteja previamente selecionada, deve-se utilizar o atributo <code class="codeTag">checked</code>
                             </p>
                             <p>
-                                O atributo <code>multiple</code> é para especificar que o usuário pode escolher mais de um atributo.
+                                O atributo <code class="codeTag">multiple</code> é para especificar que o usuário pode escolher mais de um atributo.
                             </p>
                         <label for="itens"></label>
                         <select name="selecionarItens" id="itens">
@@ -841,7 +957,7 @@
                         </select>
     
                         <p>
-                            Pode-se utilizar a tag <code>optgroup</code> para agrupar opções relacionadas
+                            Pode-se utilizar a tag <code class="codeTag">optgroup</code> para agrupar opções relacionadas
                         </p>
                         <p>
                             <label for="cars">Choose a car:</label>
@@ -902,25 +1018,25 @@
                     Áudio
                 </h3>
                 <p>
-                    Utilizar um player de áudio com dois arquivos de origem. O navegador escolherá o primeiro <code>source</code> compatível.
+                    Utilizar um player de áudio com dois arquivos de origem. O navegador escolherá o primeiro <code class="codeTag">source</code> compatível.
                 </p>
                 <p>
-                    Colocar a tag <code>autoplay</code> na tag audio para iniciar o video assim que a página é carregada.
+                    Colocar a tag <code class="codeTag">autoplay</code> na tag audio para iniciar o video assim que a página é carregada.
                 </p>
                 <p>
-                    Utilizar na tag <code>audio</code> o atributo <code>controls</code> para aparecer os controles de play ou stop.
+                    Utilizar na tag <code class="codeTag">audio</code> o atributo <code class="codeTag">controls</code> para aparecer os controles de play ou stop.
                 </p>
                 <p>
-                    O atributo <code>loop</code> pode ser utilizado para começar a rodar novamente o áudio.
+                    O atributo <code class="codeTag">loop</code> pode ser utilizado para começar a rodar novamente o áudio.
                 </p>
                 <p>
-                    <code>&lt;audio controls loop> &lt;/audio></code>
+                    <code class="codeTag">&lt;audio controls loop> &lt;/audio></code>
                 </p>
                 <audio controls>
                     <source src="horse.ogg" type="audio/ogg">
                     <source src="horse.mp3" type="audio/mpeg">
                     Your browser does not support the audio element.
-                  </audio>
+                </audio>
                 <audio controls controlsList = "nodownload">
                     <source src="exemplo.mp3" type="audio/mpeg">
                 </audio>
@@ -961,14 +1077,14 @@
                         autoplay na tag video para iniciar o video assim que a página é carregada.
                     </li>
                     <li>
-                        Colocar na tag <code>video</code> o atributo <code>controls</code> para aparecer os controles play e stop do vídeo.
+                        Colocar na tag <code class="codeTag">video</code> o atributo <code class="codeTag">controls</code> para aparecer os controles play e stop do vídeo.
                     </li>
                     <li>
-                        O atributo <code>loop</code> pode ser utilizado para começar a rodar novamente o vídeo.
-                        <code>&lt;video controls loop> &lt;/video></code>
+                        O atributo <code class="codeTag">loop</code> pode ser utilizado para começar a rodar novamente o vídeo.
+                        <code class="codeTag">&lt;video controls loop> &lt;/video></code>
                     </li>
                     <li>
-                        A tag <code>track</code> serve para mostrar legendas, quando houver.
+                        A tag <code class="codeTag">track</code> serve para mostrar legendas, quando houver.
                     </li>
                 </ul>
             </section>
@@ -981,232 +1097,253 @@
         │       OUTRAS TAGS                                                      │
         └────────────────────────────────────────────────────────────────────────┘
         -->
-            <h2>
-                Outras tags
-            </h2>
-            
-            
-            <!-- /*----------  header START ----------*/ -->
-    
-            <h3>
-                header
-            </h3>
-            <p>
-                Exemplo:
-            </p>
-            <p class="tag1 tab1">
-                <code >&lt;article></code>
-            </p>
-            <p class="tag1 tab2">
-                <code>header></code></p>
-            <p class="tag1 tab3">
-                <code>&lt;h1></code> A heading here <code>&lt;/h1></code>
-            </p>
-            <p class="tag1 tab3">
-                <code>&lt;p></code> Posted by John Doe <code>&lt;/p></code>
-            </p>
-            <p class="tag1 tab3">
-                <code>&lt;p></code> Some additional information here <code>&lt;/p></code>
-            </p>
-            <p class="tag1 tab2">
-                <code>&lt;/header></code></p>
-            <p  class="tag1 tab2">
-                <code>&lt;p></code> Lorem Ipsum dolor set amet.... <code>&lt;/p></code>
-            </p>
-            <p class="tag1 tab1">
-                <code>&lt;/article></code></p>
-            <p>
-                <code>header</code>, este elemento representa um contêiner para conteúdo introdutório ou um conjunto de links de navegação.
-            </p>
-            <p>
-                Um <code>header</code> normalmente contém:
-            </p>
-
-            <ul>
-                <li>
-                    um ou mais elementos de cabeçalho <code>h1</code> - <code>h6</code>.
-                </li>
-                <li>
-                    logotipo ou ícone
-                </li>
-                <li>
-                    informações de autoria.
-                </li>
-            </ul>
-            <p>
-                Pode-se haver vários <code>header</code> em um documento HTML. No entanto, a tag <code>header</code> não pode ser colocado dentro de um <code>footer</code>, <code>adress</code>, ou outro elemento <code>header</code>.
-            </p>
-            
-            <!-- /*----------  END of header  ----------*/ -->
-            
-                        
-            <!-- /*----------  data  ----------*/ -->
-            <h3>
-                data
-            </h3>
-            <p>
-                Para nome de produtos, podendo armazenar o número do produto no atributo <code>value</code>.  
-                Ex: <code>data value = "21053">Produto</code>
-            </p>
-            <!-- /*---------- END OF data ----------*/ -->
-
-
-            <!-- /*----------  code START ----------*/ -->
-            <h3>
-                code
-            </h3>
-            <p>
-                Para códigos de linguagens de hipertexto e de programação. Ex: <code>background-color</code>
-            </p>
-            <!-- /*---------- END OF code ----------*/ -->
-            
-
-            <!-- /*----------  kdb START ----------*/ -->
-            <h3>
-                kdb
-            </h3>
-            <p>
-                Para definir um texto como entrada de teclado
-            </p>
-            <p>
-                Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).
-            </p>
-            <!-- /*----------  END OF kdb ----------*/ -->
-            
-
-            <!-- /*----------  dl dt dd START ----------*/ -->
-            <h3>
-                dl / dt/ dd
-            </h3>
-            <p>
-                Uma lista de descrição
-            </p>
-            <p>
-                Exemplo:
-            </p>
-            
-            <p><code>dl></code></p>
-            <p> <code>dt> Coffee</code></p>
-            <p><code>dd> Black hot drink</code> </p>
-            <p><code>dt> Milk</code></p>
-            <p><code>dd> White cold drink</code></p>
-            <p>
-                Resultado:
-            </p>
+            <section>
+                <h2>
+                    Outras tags
+                </h2>
+                
+                <!-- /*=============================================
+                =            Direções do Texto            =
+                =============================================*/ -->
+                
+                <section>
+                    <!-- /*----------  SMALL  ----------*/ -->
+                    <code class="codeTag">&lt;bdo&gt;</code> 
+                    <code class="codeTag">&lt;/bdo&gt;</code>
+                    <p>
+                        O atributo <code class="codeAtributo">dir</code> deve ser utilizado para indicar a direção do texto.
+                    </p>
+                    <p>
+                        <bdo dir="ltr">Texto left to rigth</bdo> - <strong>&lt;bdo dir="ltr"&gt;</strong>
+                    </p>
+                    <p><bdo dir="rtl">Texto left to rigth</bdo> - <strong>&lt;bdo dir="rtl"&gt;</strong></p>
+                    <hr>
+                    
+                    <hr>
+                </section>
+                
+                <!-- /*----------  header START ----------*/ -->
         
-            <dl>
-                <dt>Coffee</dt>
-                <dd>Black hot drink</dd>
-                <dt>Milk</dt>
-                <dd>White cold drink</dd>
-            </dl>
-            <!-- /*----------  END OF dl dt dd  ----------*/ -->
-            
-
-            <!-- /*----------  details / summary START ----------*/ -->
-            <h3>
-                details / summary
-            </h3>
-            <p>
-                Detalhes sobre algum termo que o usuário pode escolher ver
-            </p>
-            <details>
-                <summary>
-                    Sigmund Freud
-                </summary>
+                <h3>
+                    header
+                </h3>
                 <p>
-                    Freud foi o pai da Psicanálise, que até hoje é muito influente entre os psicólogos.
+                    Exemplo:
                 </p>
-            </details>
-            
-
-            <!-- /*----------  dfn  ----------*/ -->    
-            <h3>
-                dfn
-            </h3>
-            <p>
-                Serve para marcar, destacar um termo.
-            </p>
-            <p>
-                Exemplo:
-            </p>
-            <p>
-                <dfn>HTML</dfn> is the standard markup language for creating web pages.
-            </p>
-            
-            
-            <!-- /*----------  meter  ----------*/ -->
-            <h3>
-                meter
-            </h3>
-            <p>
-                <label for="disc_c">Disc usage C:</label>
-                <meter id="disc_c" value="2" min="0" max="10">
-                    2 out of 10
-                </meter>
+                <p class="tag1 tab1">
+                    <code >&lt;article></code>
+                </p>
+                <p class="tag1 tab2">
+                    <code class="codeTag">header></code></p>
+                <p class="tag1 tab3">
+                    <code class="codeTag">&lt;h1></code> A heading here <code class="codeTag">&lt;/h1></code>
+                </p>
+                <p class="tag1 tab3">
+                    <code class="codeTag">&lt;p></code> Posted by John Doe <code class="codeTag">&lt;/p></code>
+                </p>
+                <p class="tag1 tab3">
+                    <code class="codeTag">&lt;p></code> Some additional information here <code class="codeTag">&lt;/p></code>
+                </p>
+                <p class="tag1 tab2">
+                    <code class="codeTag">&lt;/header></code></p>
+                <p  class="tag1 tab2">
+                    <code class="codeTag">&lt;p></code> Lorem Ipsum dolor set amet.... <code class="codeTag">&lt;/p></code>
+                </p>
+                <p class="tag1 tab1">
+                    <code class="codeTag">&lt;/article></code></p>
+                <p>
+                    <code class="codeTag">header</code>, este elemento representa um contêiner para conteúdo introdutório ou um conjunto de links de navegação.
+                </p>
+                <p>
+                    Um <code class="codeTag">header</code> normalmente contém:
+                </p>
+    
+                <ul>
+                    <li>
+                        um ou mais elementos de cabeçalho <code class="codeTag">h1</code> - <code class="codeTag">h6</code>.
+                    </li>
+                    <li>
+                        logotipo ou ícone
+                    </li>
+                    <li>
+                        informações de autoria.
+                    </li>
+                </ul>
+                <p>
+                    Pode-se haver vários <code class="codeTag">header</code> em um documento HTML. No entanto, a tag <code class="codeTag">header</code> não pode ser colocado dentro de um <code class="codeTag">footer</code>, <code class="codeTag">adress</code>, ou outro elemento <code class="codeTag">header</code>.
+                </p>
                 
-            </p>
-            <p>
-                <label for="disc_d">Disk usage D:</label>
-                <meter id="disc_d" value="0.6">
-                    60%
-                </meter>
-            </p>
-
-            <p>
-                <label for="anna">Anna's score:</label>
-                <meter id="anna" min="0" low="40" high="90" max="100" value="95"></meter></p>
+                <!-- /*----------  END of header  ----------*/ -->
                 
-                <p><label for="peter">Peter's score:</label>
-                <meter id="peter" min="0" low="40" high="90" max="100" value="65"></meter></p>
+                            
+                <!-- /*----------  data  ----------*/ -->
+                <h3>
+                    data
+                </h3>
+                <p>
+                    Para nome de produtos, podendo armazenar o número do produto no atributo <code class="codeTag">value</code>.  
+                    Ex: <code class="codeTag">data value = "21053">Produto</code>
+                </p>
+                <!-- /*---------- END OF data ----------*/ -->
+    
+    
+                <!-- /*----------  code START ----------*/ -->
+                <h3>
+                    code
+                </h3>
+                <p>
+                    Para códigos de linguagens de hipertexto e de programação. Ex: <code class="codeTag">background-color</code>
+                </p>
+                <!-- /*---------- END OF code ----------*/ -->
                 
-                <p><label for="linda">Linda's score:</label>
-                <meter id="linda" min="0" low="40" high="90" max="100" value="35"></meter></p>
+    
+                <!-- /*----------  kdb START ----------*/ -->
+                <h3>
+                    kdb
+                </h3>
+                <p>
+                    Para definir um texto como entrada de teclado
+                </p>
+                <p>
+                    Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).
+                </p>
+                <!-- /*----------  END OF kdb ----------*/ -->
+                
+    
+                <!-- /*----------  dl dt dd START ----------*/ -->
+                <h3>
+                    dl / dt/ dd
+                </h3>
+                <p>
+                    Uma lista de descrição
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                
+                <p><code class="codeTag">dl></code></p>
+                <p> <code class="codeTag">dt> Coffee</code></p>
+                <p><code class="codeTag">dd> Black hot drink</code> </p>
+                <p><code class="codeTag">dt> Milk</code></p>
+                <p><code class="codeTag">dd> White cold drink</code></p>
+                <p>
+                    Resultado:
+                </p>
             
-            <!-- /*----------  END OF meter  ----------*/ -->
+                <dl>
+                    <dt>Coffee</dt>
+                    <dd>Black hot drink</dd>
+                    <dt>Milk</dt>
+                    <dd>White cold drink</dd>
+                </dl>
+                <!-- /*----------  END OF dl dt dd  ----------*/ -->
+                
+    
+                <!-- /*----------  details / summary START ----------*/ -->
+                <h3>
+                    details / summary
+                </h3>
+                <p>
+                    Detalhes sobre algum termo que o usuário pode escolher ver
+                </p>
+                <details>
+                    <summary>
+                        Sigmund Freud
+                    </summary>
+                    <p>
+                        Freud foi o pai da Psicanálise, que até hoje é muito influente entre os psicólogos.
+                    </p>
+                </details>
+                
+    
+                <!-- /*----------  dfn  ----------*/ -->    
+                <h3>
+                    dfn
+                </h3>
+                <p>
+                    Serve para marcar, destacar um termo.
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <p>
+                    <dfn>HTML</dfn> is the standard markup language for creating web pages.
+                </p>
+                
+                
+                <!-- /*----------  meter  ----------*/ -->
+                <h3>
+                    meter
+                </h3>
+                <p>
+                    <label for="disc_c">Disc usage C:</label>
+                    <meter id="disc_c" value="2" min="0" max="10">
+                        2 out of 10
+                    </meter>
+                    
+                </p>
+                <p>
+                    <label for="disc_d">Disk usage D:</label>
+                    <meter id="disc_d" value="0.6">
+                        60%
+                    </meter>
+                </p>
+    
+                <p>
+                    <label for="anna">Anna's score:</label>
+                    <meter id="anna" min="0" low="40" high="90" max="100" value="95"></meter></p>
+                    
+                    <p><label for="peter">Peter's score:</label>
+                    <meter id="peter" min="0" low="40" high="90" max="100" value="65"></meter></p>
+                    
+                    <p><label for="linda">Linda's score:</label>
+                    <meter id="linda" min="0" low="40" high="90" max="100" value="35"></meter></p>
+                
+                <!-- /*----------  END OF meter  ----------*/ -->
+                
+    
+                <!-- /*----------  svg  ----------*/ -->
+                <h3>
+                    svg
+                </h3>
+                <p>
+                    Tag utilizada para desenhar um círculo.
+                </p>
+                <svg width="100" height="100">
+                    <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+                </svg>
+    
+                <!-- /*----------  END OF svg  ----------*/ -->
             
-
-            <!-- /*----------  svg  ----------*/ -->
-            <h3>
-                svg
-            </h3>
-            <p>
-                Tag utilizada para desenhar um círculo.
-            </p>
-            <svg width="100" height="100">
-                <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-            </svg>
-
-            <!-- /*----------  END OF svg  ----------*/ -->
-        
-        </section>
-        
-        
-        <!-- /*----------  time  ----------*/ -->
-        <section>
-            <h3>
-                time
-            </h3>
-            <p>
-                Tag para definir uma hora e uma data.
-            </p>
-            <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
-        </section>
-
-        <section>
-            <h3>
-                object
-            </h3>
-            <p>
-                Colocar o atributo <code>data="img.jpg"</code> ou <code>data="pagina.html".</code>
-            </p>
-            <p>
-                object data="imagem.jpg" width="300" height="200"
-            </p>
-            <p>
-                object data="pagina.html" width="300" height="200"
-            </p>
-        </section>
+            </section>
+            
+            
+            <!-- /*----------  time  ----------*/ -->
+            <section>
+                <h3>
+                    time
+                </h3>
+                <p>
+                    Tag para definir uma hora e uma data.
+                </p>
+                <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+            </section>
+    
+            <section>
+                <h3>
+                    object
+                </h3>
+                <p>
+                    Colocar o atributo <code class="codeTag">data="img.jpg"</code> ou <code class="codeTag">data="pagina.html".</code>
+                </p>
+                <p>
+                    object data="imagem.jpg" width="300" height="200"
+                </p>
+                <p>
+                    object data="pagina.html" width="300" height="200"
+                </p>
+            </section>
+            </section>
         <!-- /*----------  END OF time  ----------*/ -->
         
         <!-- /*=====  End of OUTRAS TAGS  ======*/ -->
@@ -1226,15 +1363,15 @@
                 itemscope
             </h3>
             <p>
-                Define o escopo dos metadados associados. Ele cria um novo item que segue algum padrão <code>itemtype</code>, que pode ser o padrão do schema.org.
+                Define o escopo dos metadados associados. Ele cria um novo item que segue algum padrão <code class="codeTag">itemtype</code>, que pode ser o padrão do schema.org.
             </p>
-            <p>Se não for relacionado a um <code>itemtype</code> deve ser associado a um <code>itemref</code>.</p>
+            <p>Se não for relacionado a um <code class="codeTag">itemtype</code> deve ser associado a um <code class="codeTag">itemref</code>.</p>
             
             <p>
-                Após o <code>itemscope</code>, coloca-se os <code>itemprop</code> que estão definidos pela comunidade do <code>itemtype</code>.
+                Após o <code class="codeTag">itemscope</code>, coloca-se os <code class="codeTag">itemprop</code> que estão definidos pela comunidade do <code class="codeTag">itemtype</code>.
             </p>
             <p>
-                Deve-se procurar no site schema.org todos os atributos <code>itemprop</code> para cada item criado pelo <code>itemscope</code>.
+                Deve-se procurar no site schema.org todos os atributos <code class="codeTag">itemprop</code> para cada item criado pelo <code class="codeTag">itemscope</code>.
             </p>
             <p>
                 Exemplo:
@@ -1274,7 +1411,7 @@
             itemtype
         </h3>
         <p>
-            O <code>itemtype</code> é usado para especificar a URL válida de um vocábulo (como schema.org), que descreve o item e seu contexto de propriedades.
+            O <code class="codeTag">itemtype</code> é usado para especificar a URL válida de um vocábulo (como schema.org), que descreve o item e seu contexto de propriedades.
         </p>
         <!-- /*----------  END OF itemstype  ----------*/ -->
 
@@ -1284,7 +1421,7 @@
             itemprop
         </h3>
         <p>
-            Nos <code>itemprop</code> estão os dados associados ao <code>itemscope</code>, que devem estar de acordo com algum <code>itemtype</code>, como por exemplo o schema.org.
+            Nos <code class="codeTag">itemprop</code> estão os dados associados ao <code class="codeTag">itemscope</code>, que devem estar de acordo com algum <code class="codeTag">itemtype</code>, como por exemplo o schema.org.
         </p>
         <p>
             Exemplo:
@@ -1394,7 +1531,7 @@
             defer
         </h3>
         <p>
-            Utilizado na tag <code>script</code> para o script ser executado quando a página já tiver sido carregada. Serve apenas para scripts externos.
+            Utilizado na tag <code class="codeTag">script</code> para o script ser executado quando a página já tiver sido carregada. Serve apenas para scripts externos.
         </p>
        </section>
         <!-- /*----------  END OF defer  ----------*/ -->
